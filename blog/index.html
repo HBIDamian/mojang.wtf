@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mojang.wtf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(31, 31, 31);
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: #353535;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #353535;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+        
+        p {
+            color: white;
+            font-size: 20px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: ghostwhite;
+        }
+        
+        h5 small {
+            color: silver !important;
+        }
+        
+        h2.category {
+            padding-left: 50px;
+        }
+        
+        ul li {
+            color: ghostwhite;
+            font-size: 24px;
+        }
+        
+        .subnav {
+            list-style: none;
+        }
+        
+        .subnav>li>a:focus,
+        .subnav>li>a:hover {
+            text-decoration: none;
+            background-color: #eee;
+        }
+        
+        .nav-pills>li.active>a,
+        .nav-pills>li.active>a:focus,
+        .nav-pills>li.active>a:hover {
+            background-color: rgb(31, 31, 31) !important;
+        }
+        
+        a {
+            color: ghostwhite;
+            text-decoration: none;
+        }
+        
+        a.main {
+            text-decoration: underline !important;
+        }
+        
+        a:hover {
+            color: rgb(134, 134, 134);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>mojang.wtf</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="../">Home</a></li>
+                    <li><a href="#mcbe">MC:BE</a>
+                        <ul class="subnav nav-pills nav-stacked">
+                            <li><a href="#mcbeBugs">Bugs</a></li>
+                            <!-- <li><a href="#s2">Green tea</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#section3">Family</a></li>
+                    <li><a href="#section3">Photos</a></li> -->
+                </ul><br>
+            </div>
+
+            <div id="top" class="col-sm-9">
+                <h4>Topics</h4>
+                <hr>
+                <h2 id="mcbe">Minecraft Bedrock Edition</h2>
+                <h5><small>Windows 10, Apple Smart devices, android, play station, xbox, nintendo and so on so
+                        forth</small></h5>
+                <p>Although the Minecraft Bedrock Edition fanbase is smaller than it's Minecraft Java Editon counterpart, it has a strong dedicated fanbase.<br> Despite this, there are a lot of issues with the game that the community feels like it takes
+                    away from the beauty and perfection of the game.</p>
+                <h2 id="mcbeBugs" class="category">Bugs</h2>
+                <h5><small>Minecraft: Bedrock Edition is synonymous for having bugs that some consider to be
+                        gamebreaking.</small></h5>
+                <ul>
+                    <li>
+                        <p>A user by the name of Hatchibombotar (who creates add-ons for the game) has noted that the game is buggy, extremely laggy.<br> They note issues from MCBE Version 1.13 with their issues. Go check it out at <a class="main" href="https://hatchibombotar.com/bedrock_state">https://hatchibombotar.com/bedrock_state</a></p>
+                    </li>
+                </ul>
+                <br><br>
+                <!-- <hr>
+                <h2>Officially Blogging</h2>
+                <h5>INSERT TOPIC DESCRIPTION HERE.</h5>
+                <h5><span class="label label-success">Lorem</span></h5><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <hr> -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Open Sourced</h5>
+                    <p>This project is open sourced. Feel free to contribute to the project by making pull requests on
+                        <a class="main" href="https://github.com/HBIDamian/mojang.wtf">GitHub.</a> </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="main" href="#top">Goto Top</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Disclaimer</h5>
+                    <p>
+                        NOT OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">mojang.wtf :
+            <a href="https://raw.githubusercontent.com/HBIDamian/mojang.wtf/main/LICENSE"> Apache License 2.0</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
